@@ -12,6 +12,10 @@
 		FDF8A15D232C1D7600AC4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A15B232C1D7600AC4C64 /* Main.storyboard */; };
 		FDF8A15F232C1D7800AC4C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A15E232C1D7800AC4C64 /* Assets.xcassets */; };
 		FDF8A162232C1D7800AC4C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A160232C1D7800AC4C64 /* LaunchScreen.storyboard */; };
+		FDF8A16A232C1DA200AC4C64 /* Snowman.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A169232C1DA200AC4C64 /* Snowman.swift */; };
+		FDF8A199232E6DAD00AC4C64 /* SnowmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A198232E6DAD00AC4C64 /* SnowmanViewController.swift */; };
+		FDF8A19D232EB3FA00AC4C64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A19C232EB3FA00AC4C64 /* MainViewController.swift */; };
+		FDF8A1A0232EB67100AC4C64 /* Identifirable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A19F232EB67100AC4C64 /* Identifirable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		FDF8A15E232C1D7800AC4C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDF8A161232C1D7800AC4C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDF8A163232C1D7800AC4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF8A169232C1DA200AC4C64 /* Snowman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snowman.swift; sourceTree = "<group>"; };
+		FDF8A198232E6DAD00AC4C64 /* SnowmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowmanViewController.swift; sourceTree = "<group>"; };
+		FDF8A19C232EB3FA00AC4C64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FDF8A19F232EB67100AC4C64 /* Identifirable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifirable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,66 @@
 		FDF8A156232C1D7600AC4C64 /* MultiMVCProject */ = {
 			isa = PBXGroup;
 			children = (
+				FDF8A19E232EB5CF00AC4C64 /* Extensions */,
+				FDF8A19B232EB3BC00AC4C64 /* ViewControllers */,
+				FDF8A19A232EB39F00AC4C64 /* Snowman */,
 				FDF8A157232C1D7600AC4C64 /* AppDelegate.swift */,
 				FDF8A159232C1D7600AC4C64 /* ViewController.swift */,
 				FDF8A15B232C1D7600AC4C64 /* Main.storyboard */,
+				FDF8A195232E6C6600AC4C64 /* Supporting Files */,
+			);
+			path = MultiMVCProject;
+			sourceTree = "<group>";
+		};
+		FDF8A195232E6C6600AC4C64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				FDF8A15E232C1D7800AC4C64 /* Assets.xcassets */,
 				FDF8A160232C1D7800AC4C64 /* LaunchScreen.storyboard */,
 				FDF8A163232C1D7800AC4C64 /* Info.plist */,
 			);
-			path = MultiMVCProject;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDF8A196232E6CD300AC4C64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8A169232C1DA200AC4C64 /* Snowman.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDF8A197232E6CF100AC4C64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8A198232E6DAD00AC4C64 /* SnowmanViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDF8A19A232EB39F00AC4C64 /* Snowman */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8A196232E6CD300AC4C64 /* Views */,
+				FDF8A197232E6CF100AC4C64 /* ViewControllers */,
+			);
+			path = Snowman;
+			sourceTree = "<group>";
+		};
+		FDF8A19B232EB3BC00AC4C64 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8A19C232EB3FA00AC4C64 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDF8A19E232EB5CF00AC4C64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8A19F232EB67100AC4C64 /* Identifirable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF8A1A0232EB67100AC4C64 /* Identifirable.swift in Sources */,
+				FDF8A199232E6DAD00AC4C64 /* SnowmanViewController.swift in Sources */,
+				FDF8A16A232C1DA200AC4C64 /* Snowman.swift in Sources */,
 				FDF8A15A232C1D7600AC4C64 /* ViewController.swift in Sources */,
 				FDF8A158232C1D7600AC4C64 /* AppDelegate.swift in Sources */,
+				FDF8A19D232EB3FA00AC4C64 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43W32NS74J;
-				INFOPLIST_FILE = MultiMVCProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MultiMVCProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43W32NS74J;
-				INFOPLIST_FILE = MultiMVCProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MultiMVCProject/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
